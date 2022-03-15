@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Calafia';
+    src: url(../fonts/Calafia-Regular.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'avenirBook';
+    src: url(../fonts/AvenirLTStd-Book.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'avenirBlack';
+    src: url(../fonts/AvenirLTStd-Black.woff);
+    font-weight: 800;
+}
+
+
+.main-logo {
+    max-width: 160px;
+}
+
+.nav-link {
+    color: #F08521;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #F08521;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #64C6C2;
+}
+
+.hero h1 {
+    font-family: 'Calafia';
+    font-size: 4em;
+}
+
+body {
+    font-family: 'avenirBook';
+}
+
+.hero {
+    background-image: url(../img/hero_bg.png);
+    padding: 7.5rem;
+    color: #FFF;
+    margin-top: 0;
+}
