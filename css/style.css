@@ -18,6 +18,7 @@
 
 
 /* Navigation Header Styling */
+
 .main-logo {
     max-width: 160px;
 }
@@ -84,6 +85,10 @@ body {
 }
 
 
+.pricing-header {
+    margin-top: 4em;
+}
+
 
 /* Line Item Content */
 
@@ -110,8 +115,13 @@ h3 {
     color: #64C6C2;
 }
 
+.tanning-container {
+    margin-bottom: 7em;
+}
+
 .tanning-section {
-    margin-top: 24px;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
 }
 
 /* Get In Touch */
@@ -125,4 +135,68 @@ h3 {
 
 .info-section h2 {
     color: #fff;
+}
+
+.info-flex {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.info-flex p {
+    margin-bottom: 0.5rem;
+}
+
+.title, .days {
+    font-family: 'avenirBlack';
+    font-weight: 800;
+}
+
+.containter-flex {
+    display: flex;
+}
+
+.contact-form-container {
+    width: 50%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.contact-form-content {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.map-container {
+    width: 50%;
+}
+
+/* Footer Styling */
+
+.footer-container {
+    background-color: #333;
+    color: #FFF;
+    padding: 3em;
+}
+
+.footer-container img {
+    width: 160px;
+}
+
+.footer-info {
+    justify-content: space-between;
+}
+
+.footer-nav {
+    justify-content: space-between;
+}
+
+.footer-nav .nav-link {
+    color: #fff;
+}
+
+.footer-nav .nav-link:hover, .footer-nav .nav-link:focus {
+    color: #64C6C2;
 }
