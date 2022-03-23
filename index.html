@@ -19,6 +19,9 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="./js/app.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-29QEWDVYRV"></script>
     <script>
@@ -184,29 +187,42 @@
         <div class="contact-form-container">
             <div class="contact-form-content">
 
-                <!-- Name -->
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="input" class="form-control" id="name" placeholder="Enter full name">
-                </div>
+                <form id="contactForm">
+                    <!-- Name -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="input" class="form-control" id="name" placeholder="Enter full name">
+                    </div>
 
-                <!-- Email -->
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
-                </div>
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
 
-                <!-- Phone -->
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Phone</label>
-                    <input type="tel" class="form-control" id="phone" placeholder="Enter phone">
-                </div>
+                    <!-- Phone -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter phone">
+                    </div>
 
-                <!-- Message -->
-                <div class="mb-3">
-                    <label for="textArea" class="form-label">Leave a message!</label>
-                    <textarea class="form-control" id="textArea" rows="3"></textarea>
-                </div>
+                    <!-- Message -->
+                    <div class="mb-3">
+                        <label for="textArea" class="form-label">Leave a message!</label>
+                        <textarea class="form-control" id="textArea" rows="3"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <button 
+                            type="submit"
+                            class="g-recaptcha btn btn-primary"
+                            data-sitekey="6LdPNAEfAAAAAGrwxTlWxBb9N7bviYzWJL7ECFEJ" 
+                            data-callback='onSubmit' 
+                            data-action='submit'>
+                            Submit
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="map-container">
