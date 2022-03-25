@@ -19,6 +19,15 @@
 
 /* Navigation Header Styling */
 
+header {
+    align-items: center;
+    max-width: 1196px;
+    padding: 2em;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 .main-logo {
     max-width: 160px;
 }
@@ -87,6 +96,7 @@ body {
 
 .pricing-header {
     margin-top: 4em;
+    padding: 2em;
 }
 
 
@@ -122,6 +132,7 @@ h3 {
 .tanning-section {
     margin-top: 1.5em;
     margin-bottom: 3em;
+    padding: 2em;
 }
 
 /* Get In Touch */
@@ -200,3 +211,63 @@ h3 {
 .footer-nav .nav-link:hover, .footer-nav .nav-link:focus {
     color: #64C6C2;
 }
+
+@media (max-width: 767.98px) {
+    .info-flex {
+        flex-direction: column;
+    }
+
+    .hours, .address, .contact{
+        margin-bottom: 1em;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 991.98px) { 
+
+    header {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    header .nav {
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .hero {
+        padding: 5em 2em;
+    }
+
+    .hero h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .containter-flex {
+        flex-direction: column;
+    }
+
+    .contact-form-container {
+        width: 100%;
+    }
+
+    .map-container {
+        width: 100%;
+    }
+
+    .footer-info {
+        flex-direction: column;
+    }
+
+    .footer-info-container {
+        margin-left: 0px;
+    }
+ }
